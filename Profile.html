@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="FooterStyle.css">
   <style>
   img {
     border-radius: 50%;
@@ -91,28 +94,27 @@
   .nav {
     margin-bottom: 60px;
   }
-</style>
-<!--<script type="text/javascript">
-  document.write("Hello World");
-</script>-->
+
+  </style>
+
 </head>
 <body>
   <div id = "container">
-     <!-- Navigation bar -->
+    <!-- Navigation bar -->
     <div class="nav">
-     <ul>
-      <li><a href="Index.html">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <li><a class="active" href="Profile.html">Profile</a></li>
-     </ul>
-     </div>
-     <!-- Profile picture -->
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a class="active" href="Profile.html">Profile</a></li>
+      </ul>
+    </div>
+    <!-- Profile picture -->
     <div class = "content">
       <img src="blank-profile.png" alt="Avatar" width="150px">
       <label for="file-upload" class="custom-file-upload">Upload Picture</label>
       <input id="file-upload" type="file"/>
-        <!-- Profile form -->
+      <!-- Profile form -->
       <div>
         <form class="form" action="/action_page.php">
           <label for="Uname">User Name: </label>
@@ -378,4 +380,7 @@
     </div>
   </div>
 </body>
+<footer>
+    <p class="copyright">© Website 2021</p>
+</footer>
 </html>
