@@ -1,13 +1,19 @@
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  flex-direction: row;
+  display: flex ;
   overflow: hidden;
   background-color: #333;
+  align-items: center;
+  padding-left: 540px;
+  width: auto;
+  float: none;
+  margin: 0 auto;
 }
 
 li {
   float: left;
+
 }
 
 li a {
@@ -16,10 +22,12 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 li a:hover {
   background-color: #111;
+  color: #C99A22;
 }
 
 .nav {
