@@ -17,7 +17,7 @@
     flex-direction: column;
     display: flex;
   }
-  input[type=text],input[type=password], input[type=date], select {
+  input[type=text],input[type=password], input[type=date], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -29,7 +29,7 @@
 
   input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -39,7 +39,8 @@
   }
 
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #222;
+    color: #C99A22;
   }
 
   .form {
@@ -75,14 +76,16 @@
   <div id = "container">
     <!-- Navigation bar -->
     <div class="nav">
-      <nav>
-        <ul>
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="News.html">News</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a class="active" href="Profile.html">Profile</a></li>
-        </ul>
-      </nav>
+      <div class="navContainer">
+        <nav>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a style="color:#C99A22" class="active" href="Profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- Profile picture -->
     <div class = "content">
@@ -100,6 +103,9 @@
 
           <label for="lname">Last Name:</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="Email">E-mail</label>
+          <input type="email" id="iemail" name="e-mail" placeholder="Your e-mail address..">
 
           <label for="Pword">Password:</label>
           <input type="Password" id="Pword" name="Password" placeholder="Your Password..">

@@ -1,14 +1,17 @@
-ul {
-  list-style-type: none;
+.navContainer{
   flex-direction: row;
   display: flex ;
-  overflow: hidden;
   background-color: #333;
-  align-items: center;
-  padding-left: 540px;
+  justify-content: center;
   width: auto;
+}
+
+ul {
+  list-style-type: none;
+  display: flex ;
+  overflow: hidden;
   float: none;
-  margin: 0 auto;
+
 }
 
 li {
@@ -18,7 +21,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -27,7 +30,7 @@ li a {
 
 li a:hover {
   background-color: #111;
-  color: #C99A22;
+  color: #9B9B9B;
 }
 
 .nav {

@@ -5,24 +5,94 @@
   <meta charset="utf-8">
   <meta name="Stef's Website" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="GlobalStyle.css">
+  <style>
+  input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
 
+  input[type=submit] {
+    width: 45%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #222;
+    color: #C99A22;
+  }
+
+  .fromContainer{
+    float: left;
+    width: 45%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .form {
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: left;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+</style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="Index.html">Home</a></li>
-      <li><a href="News.html">News</a></li>
-      <li><a class="active" href="Contact.html">Contact</a></li>
-      <li><a href="Profile.html">Profile</a></li>
-    </ul>
-  </nav>
+  <div class="navContainer">
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a style="color:#C99A22" class="active" href="Contact.html">Contact</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </div>
 </body>
 <main>
   <body>
     <header>
-      <h2>*Epic Blank Page*</h2>
-      <p>Hello World!</p>
+      <h2 style="color:#C99A22">Contact</h2>
     </header>
+
+    <div class="fromContainer">
+      <form class="form">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="Email">E-mail</label>
+        <input type="email" id="imail" name="e-mail" placeholder="Your e-mail address..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Send" id="isend">
+      </form>
+    </div>
   </body>
 </main>
 <footer>
