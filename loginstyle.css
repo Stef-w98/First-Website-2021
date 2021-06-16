@@ -105,8 +105,13 @@ input[type=file] {
   text-align: center;
 }
 
-.boxContact input[type = "text"]:focus,.boxContact input[type = "password"]:focus,.boxContact input[type = "email"]:focus,.boxContact input[type = "date"]:focus{
+.boxContact input[type = "text"]:focus,.boxContact input[type = "password"]:focus,.boxContact input[type = "date"]:focus{
   width: 280px;
+  border-color: #2ecc71;
+}
+
+.boxContact input[type = "email"]:focus{
+  width: 420px;
   border-color: #2ecc71;
 }
 .boxContact input[type = "submit"]{
